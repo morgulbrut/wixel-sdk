@@ -10,7 +10,7 @@
 #### Programs used by this Makefile ############################################
 CC := sdcc#         C compiler: creates object files (.rel) from C files (.c)
 AS := sdas8051#     Assembler:  creates object files (.rel) from assembly files (.s)
-AR := sdcclib#      Librarian:  creates .lib
+AR := sdar -hc#      Librarian:  creates .lib
 LD := sdld#         Linker:     creates .hex files from .rel/.lib files)
 PACKIHX := packihx# makes .hex files smaller
 MV := move#         moves files
@@ -19,8 +19,8 @@ CAT := cat#         outputs files
 ECHO := echo#       outputs some text to the standard output
 GREP := grep#       outputs lines from a file that match a given pattern
 SED := sed#         edits files
-WIXELCMD := wixelcmd# loads programs on the Wixel (command-line utility)
-WIXELCONFIG := wixelconfig # Wixel Configuration Utility (GUI)
+WIXELCMD := ./wixelcmd# loads programs on the Wixel (command-line utility)
+WIXELCONFIG := ./wixelconfig # Wixel Configuration Utility (GUI)
 
 #### Include directories #######################################################
 INCDIRS += libraries/include
