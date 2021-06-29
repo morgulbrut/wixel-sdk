@@ -21,4 +21,4 @@ http://www.pololu.com/docs/0J46
 1. clone this repo 
 2. get the wixelcmd and wixelconfig tools from https://www.pololu.com/product/1336/resources (Wixel Software archive)
 3. copy/move wixelcmd and wixelconfig into the root of your local copy of this repo
-4. install the sdcc compiler (for archlinux try `pacman -S sdcc`
+4. install the sdcc compiler (for archlinux  `pacman -S sdcc`)
